@@ -1,0 +1,73 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+  --sea: #087eae;
+  --sea-deep: #066a92;
+  --sea-soft: #e7f4f8;
+  --mint-soft: #eaf6ef;
+  --surface: #ffffff;
+  --surface-soft: #f5f9fa;
+  --glass: #ffffffc9;
+  --glass-top: #fffffff0;
+  --nav-glass: #fffffff2;
+  --canvas: #f8fbfc;
+  --ink: #182d39;
+  --muted: #6c7e87;
+  --muted-light: #97a6ad;
+  --line: #e4ebee;
+  --line-strong: #d3dfe4;
+  background: var(--canvas);
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --sea: #63c4e2;
+  --sea-deep: #81d2e9;
+  --sea-soft: #173746;
+  --mint-soft: #203b35;
+  --surface: #132630;
+  --surface-soft: #192f39;
+  --glass: #132630de;
+  --glass-top: #10232df2;
+  --nav-glass: #10232df2;
+  --canvas: #0d1d26;
+  --ink: #e8f1f3;
+  --muted: #a1b3ba;
+  --muted-light: #768c96;
+  --line: #29404b;
+  --line-strong: #395560;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="system"] {
+    color-scheme: dark;
+    --sea: #63c4e2;
+    --sea-deep: #81d2e9;
+    --sea-soft: #173746;
+    --mint-soft: #203b35;
+    --surface: #132630;
+    --surface-soft: #192f39;
+    --glass: #132630de;
+    --glass-top: #10232df2;
+    --nav-glass: #10232df2;
+    --canvas: #0d1d26;
+    --ink: #e8f1f3;
+    --muted: #a1b3ba;
+    --muted-light: #768c96;
+    --line: #29404b;
+    --line-strong: #395560;
+  }
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; min-height: 100%; background: var(--canvas); }
+body { min-width: 320px; min-height: 100vh; margin: 0; background: var(--canvas); color: var(--ink); font-size: 14px; letter-spacing: 0; }
+button, input, select { font: inherit; letter-spacing: 0; }
+button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid #1686a57a; outline-offset: 2px; }
+::selection { background: #83cee080; }
+#root { min-height: 100vh; }
